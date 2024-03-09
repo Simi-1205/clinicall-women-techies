@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import logo from '../assets/images/CLINICALL_LOGO.png'
 
-const Navbar = () => {
+const Navbar = ({ onContactUsClick }) => {
   return (
     <div className="bg">
       <div className="navbar">
@@ -15,7 +15,7 @@ const Navbar = () => {
             
             <li><a href="/about">About</a></li>
             <li><a href="/faq">FAQ</a></li>
-            <li><button type="button" onClick={() => {window.location.href = '/contact'}}>Login</button></li>
+            <li><button type="button" onClick={onContactUsClick}>Login</button></li>
           </ul>
         </div>
       </div>

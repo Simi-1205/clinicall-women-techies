@@ -12,10 +12,9 @@ root.render(
     <Router>
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route path="/about" element={<Search />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </Router>
-    <App />
   </React.StrictMode>
 );
 

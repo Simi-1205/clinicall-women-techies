@@ -4,6 +4,7 @@ import HeroSection from "./Components/HeroSection";
 import About from "./Components/About";
 import Login from "./Components/Login";
 import React, { useState } from "react";
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
       {showLoginForm && <Login onClose={handleCloseLoginForm} />}
       <HeroSection></HeroSection>
       <About />
-     
+      <Footer/>
     </>
   );
 }

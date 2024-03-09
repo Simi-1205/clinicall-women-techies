@@ -7,11 +7,12 @@ const HeroSection = () => {
     <div className="hero-section">
       <div className="hero-section-text">
         <h1>
-          Welcome to <br></br>Clinic<span>ALL</span> Hub!
+          Welcome to <br></br>Clinic<span>ALL</span>!
         </h1>
         <p>Empowering Patients. Advancing Medicine. Together.</p>
         <div className="contact-us-button">
-          <a href="">Contact Us</a>
+          <button>Get Started</button>
+          {/* <a href="">Contact Us</a> */}
         </div>
       </div>
       <img src={ctimage} alt="" />

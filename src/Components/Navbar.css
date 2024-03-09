@@ -1,0 +1,81 @@
+/* Navbar.css */
+
+.bg {
+    background-color: #bdd9cc; /* Background color for the container */
+    padding: 10px; /* Padding around the container */
+    height: 80px;
+  }
+  
+  .navbar {
+    background-color: white; /* Background color for the navbar */
+    padding: 10px; /* Padding around the navbar */
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space items evenly across the container */
+    border-radius: 10px; /* Apply border radius to create curved edges */
+    max-width: 1200px; /* Set maximum width for the navbar */
+    margin: 5px auto; /* Center the navbar horizontally */
+  }
+  
+  .left-section,
+  .right-section {
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center items vertically */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Align list items vertically */
+  }
+  
+  li {
+    margin-right: 40px; /* Add spacing between list items */
+  }
+  
+  a {
+    color: black; /* Text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for the links */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  button {
+    padding: 15px 30px; /* Reduce padding to decrease button size */
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 14px; /* Reduce font size to decrease button size */
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color: #bdd9cc;
+    color: white;
+    box-shadow: #bdd9cc 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: #bdd9cc;
+    color: white;
+    box-shadow: none;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  /* Navbar.css */
+
+.logo {
+    height: 40px; /* Adjust the height of the logo as needed */
+    margin-right: 10px; /* Add spacing between the logo and Clinic All */
+  }
+  

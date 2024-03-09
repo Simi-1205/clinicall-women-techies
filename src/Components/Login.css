@@ -5,11 +5,9 @@
   --bg-color: #fff;
   --bg-color-alt: #666;
   --main-color: #003126;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
+ 
 }
-/* switch card */
+
 .switch {
   transform: translateY(-200px);
   position: relative;
@@ -213,13 +211,6 @@
   align-items: center;
 }
 
-/*.modal-content {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px; 
-    text-align: center; 
-  }*/
 
 .close-btn {
   position: absolute;

@@ -1,8 +1,8 @@
-/* About.css */
+
 
 .about-container {
-    background-color: #1c2e26; /* Background color for the entire container */
-    display: flex; /* Use flexbox */
+    background-color: #1c2e26; 
+    display: flex; 
     min-height: 600px;
     height: 86vh;
     flex-direction: column;

@@ -22,30 +22,13 @@ const Search = () => {
         </div>
       </div>
       <div className='parent'>
-        <div className='left'>
+        <div className='left1'>
           <button className="btn">Profile Settings</button>
           <button className="btn">Documents</button>
           <button className="btn">Notifications</button>
           <button className="btn">Study Feedback</button>
         </div>
-        <div className='right'>
-        <div className='container'>
-        <div className="form-control">
-  <input type="text" required />
-  <label>
-    <span style={{ transitionDelay: '0ms' }}>U</span>
-    <span style={{ transitionDelay: '50ms' }}>s</span>
-    <span style={{ transitionDelay: '100ms' }}>e</span>
-    <span style={{ transitionDelay: '150ms' }}>r</span>
-    <span style={{ transitionDelay: '200ms' }}>n</span>
-    <span style={{ transitionDelay: '250ms' }}>a</span>
-    <span style={{ transitionDelay: '300ms' }}>m</span>
-    <span style={{ transitionDelay: '350ms' }}>e</span>
-  </label>
-</div>
-        </div>
-
-        </div>
+        <div className='right1'></div>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
 .about-container {
     background-color: #1c2e26; /* Background color for the entire container */
     display: flex; /* Use flexbox */
+    min-height: 600px;
     height: 86vh;
     flex-direction: column;
   }

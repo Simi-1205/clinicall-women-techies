@@ -5,7 +5,6 @@ import About from "./Components/About";
 import Login from "./Components/Login";
 import React, { useState } from "react";
 import Footer from './Components/Footer';
-import Search from './Search';
 
 function App() {
 

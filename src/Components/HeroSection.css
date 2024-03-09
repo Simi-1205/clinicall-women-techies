@@ -64,7 +64,7 @@
   box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.1); /* Adding shadow on hover */
 }
 
-dotlottie-player {
+.img1 {
   height: 80vh;
   position: static;
   z-index: 0;

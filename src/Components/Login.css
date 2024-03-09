@@ -26,8 +26,8 @@
   top: 0;
   width: 100px;
   text-decoration: underline;
-  color: var(--font-color);
-  font-weight: 600;
+  color: #f3f2eb;
+  font-weight: 800;
 }
 
 .card-side::after {
@@ -37,8 +37,8 @@
   top: 0;
   width: 100px;
   text-decoration: none;
-  color: var(--font-color);
-  font-weight: 600;
+  color:  #f3f2eb;
+  font-weight: 800;
 }
 
 .toggle {
@@ -231,7 +231,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;

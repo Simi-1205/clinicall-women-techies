@@ -1,49 +1,113 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
-import { useState } from "react";
+import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 
-const Login = ({onClose: handleCloseLoginForm}) => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+const Login = ({ onClose: handleCloseLoginForm }) => {
+  // const signup = () => {
+  //   fetch("http://localhost:5002/signup", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  //     .then(console.log("request sent"))
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleLogInSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5002/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        console.log("Login data sent successfully");
+      } else {
+        console.error("Sending login data unsuccessful:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error sending login data:", error);
+    }
+  };
+  const handleSignUpSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5002/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        console.log("Sign up data sent successfully");
+      } else {
+        console.error(
+          "Sending sign up data unsuccessful:",
+          response.statusText
+        );
+      }
+    } catch (error) {
+      console.error("Error sending sign up data:", error);
+    }
   };
 
   return (
-
-    
     <div>
       <div className="modal">
         <div className="modal-content">
-        <button className="close-btn" onClick={handleCloseLoginForm}>×</button>
-        <div className="wrapper">
-        <div className="card-switch">
-          <label className="switch">
-            <input type="checkbox" className="toggle" />
-            <span className="slider"></span>
-            <span className="card-side"></span>
-            <div className="flip-card__inner">
-              <div className="flip-card__front">
-                <div className="title">Log in</div>
-                <form className="flip-card__form" action="">
-                  <input className="flip-card__input" name="email" placeholder="Email" type="email" />
-                  <input className="flip-card__input" name="password" placeholder="Password" type="password" />
-                  <button className="flip-card__btn">Let's go!</button>
-                </form>
-              </div>
-              <div className="flip-card__back">
-                <div className="title">Sign up</div>
-                <form className="flip-card__form" action="">
-                  <input className="flip-card__input" placeholder="Name" type="text" />
-                  <input className="flip-card__input" name="email" placeholder="Email" type="email" />
-                  <input className="flip-card__input" name="password" placeholder="Password" type="password" />
-                  <button className="flip-card__btn">Confirm!</button>
-                </form>
-              </div>
+          <button className="close-btn" onClick={handleCloseLoginForm}>
+            ×
+          </button>
+          <div className="wrapper">
+            <div className="card-switch">
+              <label className="switch">
+                <input type="checkbox" className="toggle" />
+                <span className="slider"></span>
+                <span className="card-side"></span>
+                <div className="flip-card__inner">
+                  <div className="flip-card__front">
+                    <div className="title">Log in</div>
+                    <LoginForm
+                      handleLogInSubmit={handleLogInSubmit}
+                      handleChange={handleChange}
+                      formData={formData}
+                    />
+                  </div>
+
+                  <div className="flip-card__back">
+                    <div className="title">Sign up</div>
+                    <SignupForm
+                      handleSignUpSubmit={handleSignUpSubmit}
+                      handleChange={handleChange}
+                      formData={formData}
+                    />
+                  </div>
+                </div>
+              </label>
             </div>
-          </label>
-        </div>   
-      </div>
+          </div>
         </div>
       </div>
     </div>

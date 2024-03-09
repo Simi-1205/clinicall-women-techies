@@ -1,7 +1,7 @@
 /* Navbar.css */
 
 .bg {
-    background-color: #bdd9cc; /* Background color for the container */
+    background-color: #F3F2EB; /* Background color for the container */
     padding: 10px; /* Padding around the container */
     height: 80px;
     position:fixed;
@@ -9,7 +9,7 @@
   }
   
   .navbar {
-    background-color: white; /* Background color for the navbar */
+    background-color: #F3F2EB; /* Background color for the navbar */
     padding: 10px; /* Padding around the navbar */
     display: flex; /* Use Flexbox */
     justify-content: space-between; /* Space items evenly across the container */

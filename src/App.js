@@ -24,7 +24,7 @@ function App() {
     <>
        <Navbar onContactUsClick={handleContactUsClick} />
       {showLoginForm && <Login onClose={handleCloseLoginForm} />}
-      <HeroSection></HeroSection>
+      <HeroSection onContactUsClick={handleContactUsClick}/>
       <About />
       <Footer/>
     </>

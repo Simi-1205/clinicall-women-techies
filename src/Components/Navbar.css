@@ -88,16 +88,50 @@ button:active {
 }
 
 @media (max-width: 552px) {
+    /* Add CSS for dropdown menu */
+.navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f3f2eb;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-menu.open {
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-bottom: 10px;
+  }
+  
+  
+  .hamburger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hamburger svg {
+    font-size: 24px;
+  }
+  
   .about{
-    visibility: hidden;
+    display: none;
   }
-
-  .Login_Button{
-    visibility: hidden;
+  .Login_Button {
+    display: block !important;
   }
-  
-  
-  
-
 }
-
+  /* Hide hamburger icon on screens larger than 552px */
+  @media (min-width: 553px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  

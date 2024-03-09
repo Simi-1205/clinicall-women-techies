@@ -4,7 +4,7 @@
 
 
 .bg {
-    background-color: #F3F2EB; /* Background color for the container */
+ /* Background color for the container */
     padding: 10px; /* Padding around the container */
     height: 80px;
     position:fixed;
@@ -18,7 +18,8 @@
     justify-content: space-between; /* Space items evenly across the container */
     border-radius: 10px; /* Apply border radius to create curved edges */
     max-width: 1200px; /* Set maximum width for the navbar */
-    margin: 5px auto; /* Center the navbar horizontally */
+    margin: 20px auto; /* Center the navbar horizontally */
+    /* box-shadow: 0px 0px 2px black; */
   }
   
   .left-section,

@@ -11,6 +11,7 @@
 .hero-section-text{
     display: flex;
     flex-direction: column;
+    
 }
 
 .hero-section-text h1{
@@ -19,6 +20,7 @@
     font-weight: 600;
     font-size: 80px;
     margin-bottom: 0;
+    
 }
 
 .hero-section-text span{
@@ -38,13 +40,17 @@
 }
 
 .contact-us-button {
-    background-color: #007a5e;
     width: max-content;
-    padding: 15px;
+    padding: 1px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-us-button button{
+    background-color: #007a5e;
+    font-weight: 700;
 }
 
 .contact-us-button a{

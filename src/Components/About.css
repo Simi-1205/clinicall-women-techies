@@ -3,7 +3,8 @@
 .about-container {
     background-color: #1c2e26; /* Background color for the entire container */
     display: flex; /* Use flexbox */
-    height: 600px; /* Increase height */
+    height: 100vh;
+
   }
   
   .left {

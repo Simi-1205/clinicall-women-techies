@@ -5,6 +5,7 @@
   --bg-color: #fff;
   --bg-color-alt: #666;
   --main-color: #003126;
+ 
 }
 
 .switch {
@@ -47,6 +48,21 @@
   height: 0;
 }
 
+/* .slider {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-colorcolor);
+  transition: 0.3s;
+} */
+
 .slider {
   box-sizing: border-box;
   border-radius: 5px;
@@ -62,7 +78,6 @@
   background-color: var(--bg-colorcolor);
   transition: 0.3s;
 }
-
 
 .slider:before {
   box-sizing: border-box;
@@ -130,11 +145,12 @@
   justify-content: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: #f3f2eb; /* Updated background color */
+  background: lightgrey;
+  /* gap: 20px; */
   border-radius: 5px;
-  border: none; /* Removed border */
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
 }
-
 
 .flip-card__back {
   transform: rotateY(180deg);
@@ -174,7 +190,7 @@
   height: 40px;
   border-radius: 5px;
   border: 2px solid var(--main-color);
-  background-color: #f3f2eb; /* Updated background color */
+  background-color: var(--bg-color);
   /* Remove box shadow */
   box-shadow: none;
   font-size: 15px;
@@ -193,36 +209,25 @@
   border: 2px solid var(--input-focus);
 }
 
-
-
-
-
-
 .flip-card__btn:active,
 .button-confirm:active {
   box-shadow: 0px 0px var(--main-color);
-  transform: translate(0px, 3px);
-  color: black;
+  transform: translate(3px, 3px);
 }
 
 .flip-card__btn {
   margin: 20px 0 20px 0;
   width: 200px;
   height: 50px;
-  border-radius: 40px;
+  border-radius: 5px;
   border: 2px solid var(--main-color);
-  background-color: #007a5e; /* Updated background color */
-  box-shadow: none; /* Removed box shadow */
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
   font-size: 20px;
   font-weight: 600;
-  color: #f3f2eb; /* Updated text color */
+  color: var(--font-color);
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-
 
 .modal {
   position: fixed;
@@ -237,13 +242,23 @@
   align-items: center;
 }
 
+
 .close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #007a5e;
+  background: none;
   border: none;
-  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(238, 161, 161);
+  border: none;
   cursor: pointer;
   font-size: 30px;
   color: rgb(0, 0, 0);

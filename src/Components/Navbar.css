@@ -10,7 +10,7 @@
   padding: 10px 30px 10px 30px;
   display: flex;
   justify-content: space-between;
-  width: calc(100vw - 60px);
+  /* width: calc(100vw - 60px); */
   margin: 0;
 }
 
@@ -86,3 +86,18 @@ button:active {
 .ALL {
   color: #007a5e;
 }
+
+@media (max-width: 552px) {
+  .about{
+    visibility: hidden;
+  }
+
+  .Login_Button{
+    visibility: hidden;
+  }
+  
+  
+  
+
+}
+

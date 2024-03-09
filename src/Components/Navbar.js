@@ -13,9 +13,9 @@ const Navbar = ({ onContactUsClick }) => {
         <div className="right-section">
           <ul>
             
-            <li><a href="/about">About</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><button type="button" onClick={onContactUsClick}>Login</button></li>
+            <li><a className="about" href="/about">About</a></li>
+            {/* <li><a href="/faq">FAQ</a></li> */}
+            <li><button className="Login_Button" type="button" onClick={onContactUsClick}>Login</button></li>
           </ul>
         </div>
       </div>

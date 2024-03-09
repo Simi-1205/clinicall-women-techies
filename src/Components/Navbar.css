@@ -1,5 +1,8 @@
 /* Navbar.css */
 
+
+
+
 .bg {
     background-color: #F3F2EB; /* Background color for the container */
     padding: 10px; /* Padding around the container */
@@ -81,3 +84,12 @@
     margin-right: 10px; /* Add spacing between the logo and Clinic All */
   }
   
+  .clinicALL{
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+  }
+
+  .ALL{
+    color: #007a5e;
+  }

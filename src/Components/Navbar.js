@@ -8,11 +8,11 @@ const Navbar = () => {
       <div className="navbar">
         <div className="left-section">
           <img src={logo} alt="Logo" className="logo" /> {/* Add logo here */}
-          <a href="/">Clinic All</a>
+          <a className="clinicALL" href="/">Clinic<span className="ALL">ALL</span></a>
         </div>
         <div className="right-section">
           <ul>
-            <li><a href="/services">Services</a></li>
+            
             <li><a href="/about">About</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><button type="button" onClick={() => {window.location.href = '/contact'}}>Login</button></li>

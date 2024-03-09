@@ -9,7 +9,10 @@ const About = () => {
       </div>
       <div className="bottom">
         <div className="right">
-        
+         
+        <dotlottie-player id="img2" src="https://lottie.host/de9679bc-3e26-4f57-828c-28080ddcc840/uMsbYz6XAM.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+
+
         </div>
         <div className="left">
 

@@ -12,11 +12,24 @@
     text-align: center;
 
     font-size: 25px;
-    color: #f3f2eb;;
+    color: #f3f2eb;
   }
 
   .top h1 span{
     color: #007a5e;
   }
   
-  
+  #img2 {
+    width: 500px;
+    height: 500px;
+    opacity: 0.8;
+    float: right;
+    margin-right: 40px;
+  }
+
+  p {
+    color:#f3f2eb;
+    width: 700px;
+    margin-left: 40px;
+    font-size: 25px;
+  }

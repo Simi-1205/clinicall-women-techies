@@ -1,126 +1,112 @@
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px 20px; /* Adjust padding as needed */
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-logo {
-    width: 50px; /* Adjust logo size as needed */
-    height: auto;
-    margin-right: 10px; /* Add spacing between logo and company name */
-  }
-  
-  .navbar-company-name {
-    font-size: 26px;
-    font-weight: bold;
-  }
-  
-  .navbar-right .navbar-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navbar-right .navbar-menu li {
-    margin-left: 20px; /* Add spacing between profile/find options */
-  }
-  
-  .navbar-right .navbar-menu li a {
-    text-decoration: none;
-    color: #333333; /* Adjust color as needed */
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-.icon
-{
-    font-size: 24px;
+.bg1 {
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
 }
 
-  .btn {
-    --color: #00A97F;
-    --color2: rgb(10, 25, 30);
-    padding: 0.8em 1.75em;
-    background-color: transparent;
-    border-radius: 6px;
-    border: .3px solid var(--color);
-    transition: .5s;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    z-index: 1;
-    font-weight: 300;
-    font-size: 17px;
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    text-transform: uppercase;
-    color: var(--color);
-    width: 200px; /* Set width to a fixed value */
+.navbar1 {
+  background-color: #f3f2eb;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  /* width: calc(100vw - 60px); */
+  margin: 0;
+}
+
+.left-section1,
+.right-section1 {
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Center items vertically */
+  flex-direction: row;
+}
+
+.right-section1{
+  margin-right: 40px;
+}
+
+.icon{
+  height: 25px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.icon:hover{
+  cursor: pointer;
+}
+
+
+
+
+a1 {
+  color: black; /* Text color for the links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 20px; /* Font size for the links */
+  margin-right: 40px;
+}
+
+a1:hover {
+  text-decoration: underline; /* Add underline on hover */
+  cursor: pointer;
+}
+
+button {
+  padding: 15px 30px; /* Reduce padding to decrease button size */
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 14px; /* Reduce font size to decrease button size */
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: #bdd9cc;
+  color: white;
+  box-shadow: #bdd9cc 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: #bdd9cc;
+  color: white;
+  box-shadow: none;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+/* Navbar.css */
+
+.logo1 {
+  height: 40px; /* Adjust the height of the logo as needed */
+  margin-right: 10px; /* Add spacing between the logo and Clinic All */
+}
+
+.clinicALL1 {
+  font-size: 30px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.ALL1 {
+  color: #007a5e;
+}
+
+@media(max-width:530px){
+  .about1{
+    visibility: hidden;
   }
+}
+
+@media(max-width:375px){
+  .profile_button{
+    visibility: hidden;
+  }
+
   
-   
-   .btn::after, .btn::before {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    transform: skew(90deg) translate(-50%, -50%);
-    position: absolute;
-    inset: 50%;
-    left: 25%;
-    z-index: -1;
-    transition: .5s ease-out;
-    background-color: var(--color);
-   }
-   
-   .btn::before {
-    top: -50%;
-    left: -25%;
-    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::before {
-    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::after {
-    transform: skew(45deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover {
-    color: var(--color2);
-   }
-   
-   .btn:active {
-    filter: brightness(.7);
-    transform: scale(.98);
-   }
-   .left1 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    margin-left:40px;
-   
-  }
-  
-  .left1 button {
-    margin-bottom: 100px; /* Add spacing between buttons */
-  }
-  .right1{
-     outline: 2px solid black;
-     width: 60%;
-     margin-left: 100px;
-     margin-top:20px;
-     margin-right: 30px;
-  }
-  .parent{
-    display:flex;
-    flex-direction: row;
-  }
+
+}
+

@@ -6,29 +6,21 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Search = () => {
   return (
-    <div>
-      <div className="navbar-container">
-        <div className="navbar-left">
-          <img src={logo} alt="ClinicAll Logo" className="navbar-logo" />
-          <span className="navbar-company-name">ClinicAll</span>
+    <div className="bg1">
+      <div className="navbar1">
+        <div className="left-section1">
+          <img src={logo} alt="Logo1" className="logo1" /> {/* Add logo here */}
+          <a className="clinicALL1" href="/">Clinic<span className="ALL1">ALL</span></a>
         </div>
-        <div className="navbar-right">
-          <ul className="navbar-menu">
-            <li><a href="/profile">Find</a></li>
-            <li>
-              <FontAwesomeIcon icon={faUser} className='icon'/>
-            </li>
-          </ul>
+        <div className="right-section1">
+          <div>
+            <a1 className="about1" href="/about">Search Study</a1>
+          </div>
+          <div className="profile_button">
+            <FontAwesomeIcon icon={faUser} className='icon'/>
+          </div>
+          
         </div>
-      </div>
-      <div className='parent'>
-        <div className='left1'>
-          <button className="btn">Profile Settings</button>
-          <button className="btn">Documents</button>
-          <button className="btn">Notifications</button>
-          <button className="btn">Study Feedback</button>
-        </div>
-        <div className='right1'></div>
       </div>
     </div>
   );

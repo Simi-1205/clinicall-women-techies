@@ -5,3 +5,7 @@
     align-items: center;
     justify-content: center;  
 }
+
+.hero-section-text h1{
+    font-size: 80px;
+}

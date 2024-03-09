@@ -1,0 +1,36 @@
+/* About.css */
+
+.about-container {
+    background-color: #1c2e26; /* Background color for the entire container */
+    display: flex; /* Use flexbox */
+    height: 600px; /* Increase height */
+  }
+  
+  .left {
+    color: white; /* Text color for the left section */
+    padding: 20px; /* Padding around the content */
+    width: 50%; /* Set width to 50% of the container */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .left h1 {
+    font-weight: bold; /* Make the heading bold */
+    font-size: 24px; /* Increase font size */
+  }
+  
+  .right {
+    padding: 20px; /* Padding around the content */
+    width: 50%; /* Set width to 50% of the container */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  .right p {
+    margin-bottom: 20px; /* Add margin to bottom of paragraphs */
+    color: white; /* Text color for paragraphs */
+    font-size: 18px; /* Increase font size */
+  }
+  

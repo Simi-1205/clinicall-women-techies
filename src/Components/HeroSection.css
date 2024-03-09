@@ -21,7 +21,7 @@
 
 .contact-us-button {
     background-color: #007a5e;
-    width: 20%;
+    width: max-content;
     padding: 10px;
     border-radius: 50px;
     display: flex;

@@ -4,6 +4,8 @@
     background-color: #bdd9cc; /* Background color for the container */
     padding: 10px; /* Padding around the container */
     height: 80px;
+    position:fixed;
+    width: 100vw;
   }
   
   .navbar {

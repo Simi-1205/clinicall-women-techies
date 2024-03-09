@@ -15,7 +15,7 @@ const Navbar = () => {
             <li><a href="/services">Services</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/faq">FAQ</a></li>
-            <li><button type="button" onClick={() => {window.location.href = '/contact'}}>Contact</button></li>
+            <li><button type="button" onClick={() => {window.location.href = '/contact'}}>Login</button></li>
           </ul>
         </div>
       </div>

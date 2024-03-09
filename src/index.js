@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Search from './Search';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Search from "./Search";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route path="/about" element={<Search />} />
+      </Routes>
+    </Router>
     <App />
-    {/* <Search /> */}
   </React.StrictMode>
 );
 

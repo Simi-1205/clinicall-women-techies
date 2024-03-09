@@ -1,70 +1,71 @@
 .hero-section {
-    background: #f3f2eb;
-    height: 90vh;
-    padding: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;  
+  background: #f3f2eb;
+  height: 90vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-section-text{
-    display: flex;
-    flex-direction: column;
-    
+.hero-section-text {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
 }
 
-.hero-section-text h1{
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 80px;
-    margin-bottom: 0;
-    
+.hero-section-text h1 {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 80px;
+  margin-bottom: 0;
 }
 
-.hero-section-text span{
-    color: #007a5e;
+.hero-section-text span {
+  color: #007a5e;
 }
 
-.hero-section-text span:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    
+.hero-section-text span:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.hero-section-text p{
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 10px ;
+.hero-section-text p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 3rem;
 }
 
 .contact-us-button {
-    width: max-content;
-    padding: 1px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: max-content;
+  padding: 1px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-us-button button{
-    background-color: #007a5e;
-    font-weight: 700;
+.contact-us-button button {
+  background-color: #007a5e;
+  font-weight: 700;
 }
 
-.contact-us-button a{
-    text-decoration: none;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    color: #f3f2eb;
+.contact-us-button a {
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #f3f2eb;
 }
 
-.contact-us-button:hover{
-    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.1); /* Adding shadow on hover */
+.contact-us-button:hover {
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.1); /* Adding shadow on hover */
 }
 
-dotlottie-player{
-    height: 80vh;
+dotlottie-player {
+  height: 80vh;
+  position: static;
+  z-index: 0;
 }

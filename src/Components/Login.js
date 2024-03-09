@@ -4,23 +4,6 @@ import LoginForm from "./LoginForm";
 import SignupForm from "./SignupForm";
 
 const Login = ({ onClose: handleCloseLoginForm }) => {
-  // const signup = () => {
-  //   fetch("http://localhost:5002/signup", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   })
-  //     .then(console.log("request sent"))
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -50,6 +33,7 @@ const Login = ({ onClose: handleCloseLoginForm }) => {
       console.error("Error sending login data:", error);
     }
   };
+
   const handleSignUpSubmit = async (e) => {
     e.preventDefault();
     try {

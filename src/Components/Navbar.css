@@ -1,16 +1,16 @@
 .bg {
   height: 80px;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
 
 .navbar {
   background-color: #f3f2eb;
-  padding: 10px 30px;
+  padding: 10px 30px 10px 30px;
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: calc(100vw - 60px);
   margin: 0;
 }
 

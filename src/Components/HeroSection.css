@@ -1,11 +1,35 @@
 .hero-section {
-    width: 100vw;
+    background: #f3f2eb;
+    height: calc(90vh - 6rem);
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;  
 }
 
+.hero-section-text{
+    display: flex;
+    flex-direction: column;
+}
+
 .hero-section-text h1{
     font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.contact-us-button {
+    background-color: #007a5e;
+    width: 20%;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-button a{
+    text-decoration: none;
+    color: #f3f2eb;
 }

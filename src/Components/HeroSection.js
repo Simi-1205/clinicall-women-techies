@@ -10,7 +10,9 @@ const HeroSection = () => {
           Welcome to <br></br>ClinicAll Hub!
         </h1>
         <p>Empowering Patients. Advancing Medicine. Together.</p>
-        <div className="contact-us-button">Contact Us</div>
+        <div className="contact-us-button">
+          <a href="">Contact Us</a>
+        </div>
       </div>
       <img src={ctimage} alt="" />
     </div>

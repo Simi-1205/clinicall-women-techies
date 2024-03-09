@@ -1,11 +1,21 @@
 import React from "react";
 import "./Login.css";
+import { useState } from "react";
 
-const Login = () => {
+const Login = ({onClose: handleCloseLoginForm}) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
+
+    
     <div>
       <div className="modal">
         <div className="modal-content">
+        <button className="close-btn" onClick={handleCloseLoginForm}>×</button>
         <div className="wrapper">
         <div className="card-switch">
           <label className="switch">

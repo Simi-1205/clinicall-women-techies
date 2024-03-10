@@ -6,6 +6,7 @@ import Profile from "./Profile";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import withTokenVerification from "./withTokenVerification";
+import Search1 from "./Search1";
 
 const ProfileWithVerification = withTokenVerification(Profile);
 
@@ -17,6 +18,7 @@ root.render(
         <Route exact path="/" element={<App />} />
         {/* <Route path="/profile" element={<ProfileWithVerification />} /> */}
         <Route path="/profile" element={<Profile />} />
+        <Route path="/search" element={<Search1 />} />
       </Routes>
     </Router>
   </React.StrictMode>

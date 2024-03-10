@@ -24,9 +24,19 @@ const Navbar = ({ onContactUsClick }) => {
           <div className="hamburger" onClick={toggleMenu}>
             <FontAwesomeIcon icon={faBars} />
           </div>
-          <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
-            <li><a href="/about">About</a></li>
-            <li><button className="Login_Button" type="button" onClick={onContactUsClick}>Login</button></li> 
+          <ul className={`navbar-menu ${isMenuOpen ? "open" : ""}`}>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <button
+                className="Login_Button"
+                type="button"
+                onClick={onContactUsClick}
+              >
+                Login
+              </button>
+            </li>
           </ul>
         </div>
       </div>

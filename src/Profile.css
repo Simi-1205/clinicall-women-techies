@@ -184,6 +184,7 @@ button:active {
   text-align: center;
   transition: 0.4s;
 
+
 }
 
 .EMPTY_BOX{
@@ -198,6 +199,7 @@ button:active {
   transition: 0.4s;
   border-top: solid;
   border-width: 1px;
+  border-bottom: solid;
 }
 
 .LOGOUT:hover{

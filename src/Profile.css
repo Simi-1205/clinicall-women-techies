@@ -66,6 +66,10 @@ button {
   transition: all 0.5s ease;
 }
 
+.clinicALL1:hover{
+  cursor: pointer;
+}
+
 button:hover {
   letter-spacing: 3px;
   background-color: #bdd9cc;
@@ -117,14 +121,96 @@ button:active {
   background-color: #f3f2eb;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   
 }
 
 .Vertical_nav{
-  margin-top: 3px;
-  width: 14%;
+  width: 19%;
   height: 100%;
-  
+  border: solid;
+  border-color: black;
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.NAV_BTN1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.NAV_BTN1:hover{
+  cursor: pointer;
+  background-color: #007a5e;
+  opacity: 0.8;
+  color: #f3f2eb;
+}
+
+
+.NAV_BTN2:hover{
+  cursor: pointer;
+  background-color: #007a5e;
+  opacity: 0.8;
+  color: #f3f2eb;
+}
+
+.NAV_BTN3:hover{
+  cursor: pointer;
+  background-color:#007a5e;
+  opacity: 0.8;
+  color: #f3f2eb;
+}
+
+.NAV_BTN2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  transition: 0.4s;
+
+
+}
+
+.NAV_BTN3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  transition: 0.4s;
+
+}
+
+.EMPTY_BOX{
+  height: 64.5%;
+}
+
+.LOGOUT{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  transition: 0.4s;
+  border-top: solid;
+  border-width: 1px;
+}
+
+.LOGOUT:hover{
+  cursor: pointer;
+  background-color:#007a5e;
+  opacity: 0.8;
+  color: #f3f2eb;
+}
+
+.Hero
+
+.Details{
+  background-color: #007a5e;
+  width: 100%;
+  opacity: 0.8;
 }

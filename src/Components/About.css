@@ -89,6 +89,13 @@
     
   }
 
+  @media (max-width: 320px){
+    .about-container{
+      height: 175vh;
+      width: 100%;
+    }
+  }
+
   
 
   

@@ -28,10 +28,11 @@ const Profile = () => {
       </div>
       <div className="Hero">
         <div className="Vertical_nav">
+        <div className="NAV_BTN2">DOCUMENTS</div>
           <div className="NAV_BTN1">PROFILE SETTINGS</div>
-          <div className="NAV_BTN2">DOCUMENTS</div>
+          <div className="NAV_BTN1">VERIFICATION STATUS</div>
           <div className="NAV_BTN3">FEEDBACK</div>
-          <div className="EMPTY_BOX"></div>
+          {/* <div className="EMPTY_BOX"></div> */}
           <div className="LOGOUT">LOGOUT</div>
         </div>
 

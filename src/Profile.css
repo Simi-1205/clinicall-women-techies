@@ -197,9 +197,8 @@ button:active {
   width: 100%;
   text-align: center;
   transition: 0.4s;
-  border-top: solid;
   border-width: 1px;
-  border-bottom: solid;
+  color: red;
 }
 
 .LOGOUT:hover{

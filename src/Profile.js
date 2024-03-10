@@ -4,13 +4,13 @@ import logo from "./assets/images/CLINICALL_LOGO.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-const Search = () => {
+const Profile = () => {
   return (
     <div className="bg1">
       <div className="navbar1">
         <div className="left-section1">
           <img src={logo} alt="Logo1" className="logo1" /> {/* Add logo here */}
-          <a className="clinicALL1" href="/">
+          <a className="clinicALL1" >
             Clinic<span className="ALL1">ALL</span>
           </a>
         </div>
@@ -27,15 +27,19 @@ const Search = () => {
       </div>
       <div className="Hero">
         <div className="Vertical_nav">
-          <div className="ProfileSettings">PROFILE SETTINGS</div>
-          <div className="Documentation">DOCUMENTATIONS</div>
-          <div className="Feedback">FEEDBACK</div>
+          <div className="NAV_BTN1">PROFILE SETTINGS</div>
+          <div className="NAV_BTN2">DOCUMENTS</div>
+          <div className="NAV_BTN3">FEEDBACK</div>
+          <div className="EMPTY_BOX"></div>
+          <div className="LOGOUT">LOGOUT</div>
         </div>
 
-        <div className="Details"></div>
+        <div className="Details">
+          
+        </div>
       </div>
     </div>
   );
 };
 
-export default Search;
+export default Profile;

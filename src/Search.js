@@ -19,8 +19,25 @@ const Search = () => {
           <div className="profile_button">
             <FontAwesomeIcon icon={faUser} className='icon'/>
           </div>
-          
         </div>
+      </div>
+      <div className="Hero">
+        <div className="Vertical_nav">
+          <div className='ProfileSettings'>
+            PROFILE SETTINGS
+          </div>
+          <div className="Documentation">
+            DOCUMENTATIONS
+          </div>
+          <div className='Feedback'>
+            FEEDBACK
+          </div>
+        </div>
+          
+        <div className="Details">
+
+        </div>
+
       </div>
     </div>
   );

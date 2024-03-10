@@ -28,7 +28,7 @@ function Search1() {
 
 
         <div className="input-page">
-      <h1>Input Page</h1>
+      <h1>Search for Clinical Trials</h1>
       <div className="input-group">
         <label htmlFor="disease">Disease:</label>
         <input type="text" id="disease" name="disease" placeholder="Enter disease" />

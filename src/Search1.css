@@ -57,12 +57,13 @@ a1:hover {
 .input-page {
   background-color:#f3f2eb ;
   margin-top: 50px; /* Adjust the top margin as needed */
-  margin-bottom: 20px; /* Add margin between title and input boxes */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-left: 0px;
+  height:120vh;
 }
 
 

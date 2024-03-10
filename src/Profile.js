@@ -3,6 +3,7 @@ import "./Profile.css";
 import logo from "./assets/images/CLINICALL_LOGO.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import ProfileSettings from "./Components/UploadPDF";
 
 const Profile = () => {
   return (
@@ -34,9 +35,8 @@ const Profile = () => {
           <div className="LOGOUT">LOGOUT</div>
         </div>
 
-        <div className="Details">
+        <ProfileSettings/>
           
-        </div>
       </div>
     </div>
   );

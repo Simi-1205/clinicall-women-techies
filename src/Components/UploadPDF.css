@@ -1,0 +1,65 @@
+.upload-container {
+  background-color: #007a5e;
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Label {
+  display: flex;
+  background-color: #f3f2eb;
+  height: 40px;
+  width: 200px; /* Reduced width */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #007a5e;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+.BOX {
+  height: 60%;
+  width: 60%;
+  max-width: 500px; /* Added max-width to prevent stretching on larger screens */
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  border: solid;
+  border-color: #f3f2eb;
+  justify-content: space-between;
+  align-items: center;
+  border-width: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+input[type='file'] {
+  width: 180px; /* Adjusted width */
+}
+
+button {
+  width: 180px; /* Adjusted width */
+}
+
+.INPUT {
+  width: 300px; /* Increased width to accommodate file status */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #007a5e;
+  border-radius: 5px;
+  background-color: #f3f2eb;
+  color: #007a5e;
+  font-size: 16px;
+}
+
+.INPUT:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #005e49; /* Change border color on focus */
+}

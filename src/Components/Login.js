@@ -37,6 +37,9 @@ const Login = ({ onClose: handleCloseLoginForm }) => {
 
       // Store token in localStorage
       localStorage.setItem("token", data.token);
+
+      //Redirect to profilePage
+      window.location.href = "/profile";
     } catch (error) {
       console.error("Error sending login data:", error);
     }

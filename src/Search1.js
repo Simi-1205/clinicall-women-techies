@@ -46,7 +46,7 @@ function Search1() {
           <option value="Sex">Select Sex</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
-          <option value="P">Phase 3</option>
+          <option value="P">Other</option>
           
         </select>
       </div>
@@ -83,10 +83,29 @@ function Search1() {
           <option value="Unchanged">Unchanged</option>
         </select>
       </div>
+
       <div className="input-group">
-        <label htmlFor="success-rates">Success Rates:</label>
-        <input type="text" id="success-rates" name="success-rates" placeholder="Enter success rates" />
+        <label htmlFor="outcome-measure">Success Rates:</label>
+        <select id="Success Rates" name="Success Rates">
+          <option value="Choose Success Rate">Choose Success Rate</option>
+          <option value="Improved">20% or more</option>
+          <option value="Improved">30% or more</option>
+          <option value="Improved">40% or more</option>
+          <option value="Improved">50% or more</option>
+          <option value="Improved">60% or more</option>
+          <option value="Improved">70% or more</option>
+          <option value="Improved">80% or more</option>
+          <option value="Improved">90% or more</option>
+        </select>
       </div>
+      
+      
+
+
+
+
+
+
       <div className="input-group">
         <label htmlFor="symptoms">Symptoms after Study:</label>
         <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms after study" />
@@ -100,7 +119,8 @@ function Search1() {
           <option value="Enrollments closed">Enrollments closed</option>
         </select>
       </div>
-      <button type="submit">Submit</button>
+      <button class="btn-96"><span>Button</span></button>
+
 </div>
 
 

@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Search from "./Search";
+import Profile from "./Profile";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import withTokenVerification from "./withTokenVerification";
 
-const SearchWithVerification = withTokenVerification(Search);
+const ProfileWithVerification = withTokenVerification(Profile);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +15,7 @@ root.render(
     <Router>
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route path="/search" element={<SearchWithVerification />} />
+        <Route path="/profile" element={<ProfileWithVerification />} />
       </Routes>
     </Router>
   </React.StrictMode>

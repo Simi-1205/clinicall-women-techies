@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './UploadPDF.css';
+import logo from '../assets/images/dropbox.png';
 
 const UploadPDF = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -27,6 +28,9 @@ const UploadPDF = () => {
           Upload Medical Records
         </div>
       <div className='BOX'>
+        <div className="Image">
+        <img src={logo} alt="Logo" className="logoo" />
+        </div>
         <input className="INPUT"
           type="file"
           accept="application/pdf"

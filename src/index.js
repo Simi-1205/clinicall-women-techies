@@ -11,6 +11,7 @@ import handleLogout from "./handleLogout";
 import Search1 from "./Search1";
 
 const ProfileWithVerification = withTokenVerification(Profile);
+const SearchWithVerification = withTokenVerification(Search1);
 
 const RootComponent = () => {
   // useEffect(() => {
@@ -24,9 +25,11 @@ const RootComponent = () => {
     <React.StrictMode>
       <Router>
         <Routes>
-          {/* <Route exact path="/" element={<App />} /> */}
-          <Route path="/profile" element={<ProfileWithVerification />} />
-          {/* <Route path="/profile" element={<Profile />} /> */}
+          <Route exact path="/" element={<App />} />
+          {/* <Route path="/profile" element={<ProfileWithVerification />} /> */}
+          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/search" element={<SearchWithVerification />} /> */}
+          <Route path="/search" element={<Search1 />} />
         </Routes>
       </Router>
     </React.StrictMode>

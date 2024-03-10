@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 const withTokenVerification = (Component) => {
   const WrapperComponent = () => {
     const navigate = useNavigate();
@@ -10,6 +11,7 @@ const withTokenVerification = (Component) => {
         const token = localStorage.getItem("token");
         if (!token) {
           // Token not present, redirect to login page
+
           console.log("Token not present");
           navigate("/");
           return;

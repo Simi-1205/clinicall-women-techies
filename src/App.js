@@ -16,7 +16,7 @@ function App() {
   };
 
   const handleCloseLoginForm = () => {
-    setShowLoginForm(true);
+    setShowLoginForm(false);
   };
 
   return (

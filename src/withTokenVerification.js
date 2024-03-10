@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
 
 const withTokenVerification = (Component) => {
   const WrapperComponent = () => {
@@ -14,6 +15,7 @@ const withTokenVerification = (Component) => {
 
           console.log("Token not present");
           navigate("/");
+          window.alert("Please Login");
           return;
         }
 
@@ -49,7 +51,7 @@ const withTokenVerification = (Component) => {
     }, [navigate]);
 
     console.log(verified);
-    return verified ? <Component /> : <h1>LOGIN ERROR</h1>;
+    return verified ? <Component /> : <h1>Please Login</h1>;
   };
 
   return WrapperComponent;

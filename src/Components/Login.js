@@ -24,11 +24,19 @@ const Login = ({ onClose: handleCloseLoginForm }) => {
         },
         body: JSON.stringify(formData),
       });
-      if (response.ok) {
-        console.log("Login data sent successfully");
-      } else {
-        console.error("Sending login data unsuccessful:", response.statusText);
+
+      // Check if response is successful
+      if (!response.ok) {
+        throw new Error("Failed to log in");
       }
+
+      // Parse JSON response
+      const data = await response.json();
+      console.log("Login successful");
+      // console.log(data);
+
+      // Store token in localStorage
+      localStorage.setItem("token", data.token);
     } catch (error) {
       console.error("Error sending login data:", error);
     }

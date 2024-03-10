@@ -23,7 +23,7 @@ const RootComponent = () => {
     <React.StrictMode>
       <Router>
         <Routes>
-          <Route exact path="/" element={<App />} />
+          {/* <Route exact path="/" element={<App />} /> */}
           <Route path="/profile" element={<ProfileWithVerification />} />
           {/* <Route path="/profile" element={<Profile />} /> */}
         </Routes>
